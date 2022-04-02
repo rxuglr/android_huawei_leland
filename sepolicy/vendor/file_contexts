@@ -1,0 +1,47 @@
+# Bootdevice
+/dev/block/bootdevice/by-name/bootfail_info u:object_r:bfm_block_device:s0
+/dev/block/bootdevice/by-name/cache		    u:object_r:cache_block_device:s0
+/dev/block/bootdevice/by-name/frp		    u:object_r:frp_block_device:s0
+/dev/block/bootdevice/by-name/hisee_fs		u:object_r:hisee_blkdev:s0
+/dev/block/bootdevice/by-name/hisee_img		u:object_r:hisee_blkdev:s0
+/dev/block/bootdevice/by-name/misc		    u:object_r:misc_dev_block:s0
+/dev/block/bootdevice/by-name/nvme		    u:object_r:nve_block_device:s0
+/dev/block/bootdevice/by-name/oeminfo		u:object_r:oeminfo_nvm_device:s0
+/dev/block/bootdevice/by-name/rrecord		u:object_r:rrecord_block_device:s0
+/dev/block/bootdevice/by-name/userdata		u:object_r:userdata_block_device:s0
+/dev/block/bootdevice/by-name/misc          u:object_r:misc_dev_block:s0
+/dev/block/bootdevice/by-name/modem_om      u:object_r:mke2fs_blkdev:s0
+/dev/block/bootdevice/by-name/modemnvm_img  u:object_r:mke2fs_blkdev:s0
+/dev/block/bootdevice/by-name/splash2       u:object_r:splash2_block_device:s0
+
+# Devices
+/dev/dsm                           u:object_r:dmd_device:s0
+/dev/hw_bfm                        u:object_r:bfmr_device:s0
+/dev/hwlog_dubai                   u:object_r:dubai_log_device:s0
+/dev/hwlog_exception               u:object_r:exception_device:s0
+/dev/hwlog_jank                    u:object_r:jank_device:s0
+/dev/nve0                          u:object_r:recovery_device:s0
+/dev/pmom                          u:object_r:pmom_device:s0
+/dev/ttyAMA0                       u:object_r:irda_device:s0
+/dev/ttyHwGS2                      u:object_r:recovery_device:s0
+
+
+# Rootfs
+/avb(/.*)?              u:object_r:system_file:s0
+/3rdmodem(/.*)?		u:object_r:radio_data_file:s0
+/modemom(/.*)?		u:object_r:modem_log_file:s0
+/modem_log(/.*)?        u:object_r:modem_log_file:s0
+/patch(/.*)?		u:object_r:system_file:s0
+/patch_hw(/.*)?		u:object_r:system_file:s0
+/preavs(/.*)?		u:object_r:vendor_file:s0
+/preload(/.*)?		u:object_r:system_file:s0
+/product(/.*)?		u:object_r:system_file:s0
+/version(/.*)?		u:object_r:system_file:s0
+/cust(/.*)?            u:object_r:system_file:s0
+/hw_odm(/.*)?          u:object_r:rootfs:s0
+/mnt/hisee_fs(/.*)?    u:object_r:hisee_data_file:s0
+/sec_storage(/.*)?     u:object_r:teecd_data_file:s0
+/splash2(/.*)?         u:object_r:splash2_data_file:s0
+
+# Sys files
+/sys/devices/platform/fingerprint(/.*)?    u:object_r:sysfs_fingerprint:s0

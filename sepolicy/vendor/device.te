@@ -1,0 +1,9 @@
+type atcmdserver_blkdev, dev_type;
+type bfm_block_device, dev_type;
+type efuse_blkdev, dev_type;
+type hisee_blkdev, dev_type;
+type misc_dev_block, dev_type;
+type nve_block_device, dev_type;
+type oeminfo_nvm_device, dev_type, file_type;
+type rrecord_block_device, dev_type;
+type teecd_blkdev, dev_type, file_type;

@@ -1,0 +1,11 @@
+allow modem_log_file labeledfs:filesystem associate;
+type modem_log_file, fs_type;
+
+allow radio_data_file labeledfs:filesystem associate;
+
+allow system_file labeledfs:filesystem associate;
+
+allow teecd_data_file_vendor labeledfs:filesystem associate;
+type teecd_data_file_vendor, fs_type;
+
+allow vendor_file labeledfs:filesystem associate;
