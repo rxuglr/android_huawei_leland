@@ -1,4 +1,4 @@
-once again i have no idea if this works or no. I dont remember for which lineage version i made this.. I guess 18.1? Feel free to do whatever you want
+once again i have no fucking idea if this works or no. I dont remember for which lineage version i made this.. I guess 18.1? Feel free to do whatever you want
 # Honor 9 Lite Device Tree
 
 Basic         |Spec Sheet
